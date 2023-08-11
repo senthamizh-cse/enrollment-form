@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <h1 class="main header"><center>Student enrollment form</center></h1>
+    <form>
+        <fieldset class="sub-container" id="basic details">
+         <label for="user-Firstname">First Name:</label>
+         <input type="text" placeholder="First Name" id="user-Firstname" name="user-Firstname"required/>
+         <br><br>
+         <label for="user-Lastname">Last Name:</label>
+         <input type="text" placeholder="Last Name" id="user-Lastname" name="user-Lastname"required/>
+         <br><br>
+         <label for="user-nuumber">Register Number:</label>
+         <input type="number" placeholder="register number" id="user-number" name="user-number"required/>
+         <br><br>
+         <label for="user-number">Mobile Number:</label>
+         <input type="number" placeholder="mobile number" pattern="[6789][0-9]{9}" id="user-number" name="user-numbeer"required/>
+         <br><br>
+         <label for="Gender">Gender:</label>
+         <input type="radio" name="gender" value="male"> Male
+         <input type="radio" name="gender" value="female"> Female
+         <input type="radio" name="gender" value="other"> other
+         <br><br>
+         <label for="email-id">Email-id:</label>
+         <input type="email" placeholder="email address"required/>
+         <br><br>
+         <label for="department">Department:</label>
+      &nbsp;
+         <input type="radio" name="dept" value="CSE">CSE
+         
+         <input type="radio" name="dept" value="EEE">EEE
+         
+         <input type="radio" name="dept" value="ECE">ECE
+         
+         <input type="radio" name="dept" value="AIML">AIML
+         
+         <input type="radio" name="dept" value="AIDS">AIDS
+         <br><br>
+         <label for="language">Known language:</label>
+         &nbsp;
+         <input type="checkbox" name="language" value="C program">C program
+         
+         <input type="checkbox" name="language" value="C++">C++
+         
+         <input type="checkbox" name="language" value="Java">Java
+         
+         <input type="checkbox" name="language" value="MERN fullstack">MERN fullstack
+         
+         <input type="checkbox" name="language" value="Python">Python
+         <br><br>
+         <label for="slots">Available slots:</label>
+         &nbsp;
+         <input type="radio" name="time" value="10 AM">10 AM
+         
+         <input type="radio" name="time" value="2 PM">2 PM
+         
+         <input type="radio" name="time" value="5 PM">5 PM
+         <br><br>
+         <label for="resume">Upload Resume:</label>&nbsp;
+         
+         <input type="file" accept=".pdf"required/>
+         <br><br>
+         <center><button>SUBMIT</button></center>
+
+         
+
+        </fieldset>
+    </form>
+
     
 </body>
 </html>
